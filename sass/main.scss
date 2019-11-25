@@ -1,0 +1,26 @@
+@import '_vars';
+@import 'modules/_errors';
+@import 'modules/_lightbox';
+@font-face {
+    font-family: $heading-font;
+    src: url('../css/SnellRoundhand.ttc') format('truetype');
+  }
+
+@font-face {
+    font-family: $body-font;
+    src: url('../css/Avenir.ttc') format('truetype');  
+}
+
+body {
+    color: $color;
+    background-color: $body-bg;
+    display: inline;
+} 
+
+.princess_container {
+    display: inline;
+}
+
+h1.hidden {
+    display: none;
+  }
