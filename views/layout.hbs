@@ -1,10 +1,84 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Disney Princesses</title>
+</head>
+<body>
+    <h1 class="main-header">Everything You Need To Know About Disney's 12 Official Princesses</h1>
+    <main>
+        <!-- if we were using a framework, these might be 6-col or something-->
+      
+       <section id="Princess1">
+          <div class="princess_container">
+            <h1 class="hidden">Belle</h1>
+            <object data="images/belle_banner.svg" type="image/svg+xml" class="see-more" id="belle_banner" data-target="1"></object>
+            <object data="images/belle.svg" type="image/svg+xml" class="svg-graphic" id="belle"></object>
+          </div>
+        </section>
+
+        <section id="Princess2">
+          <div class="princess_container">
+            <h1 class="hidden">Cinderella</h1>
+            <object data="images/cinderella_banner.svg" type="image/svg+xml" class="see-more" id="cinderella_banner" data-target="2"></object>
+            <object data="images/cinderella.svg" type="image/svg+xml" class="svg-graphic" id="cinderella"></object>
+          </div>
+        </section>
+
+        <section id="Princess3">
+          <div class="princess_container">
+            <h1 class="hidden">Aroura</h1>
+            <object data="images/aroura_banner.svg" type="image/svg+xml" class="see-more" id="aroura_banner" data-target="3"></object>
+            <object data="images/aroura.svg" type="image/svg+xml" class="svg-graphic" id="aroura"></object>
+          </div>
+        </section>
+
+        <section id="Princess4">
+          <div class="princess_container">
+            <h1 class="hidden">Snow White</h1>
+            <object data="images/snowwhite_banner.svg" type="image/svg+xml" class="see-more" id="snowwhite_banner" data-target="4"></object>
+            <object data="images/snowwhite.svg" type="image/svg+xml" class="svg-graphic" id="snowwhite"></object>
+          </div>
+        </section>
+
+        <section id="Princess5">
+          <div class="princess_container">
+            <h1 class="hidden">Ariel</h1>
+            <object data="images/ariel_banner.svg" type="image/svg+xml" class="see-more" id="ariel_banner" data-target="5"></object>
+            <object data="images/ariel.svg" type="image/svg+xml" class="svg-graphic" id="ariel"></object>
+          </div>
+        </section>
+
+         <section id="Princess6">
+          <div class="princess_container">
+            <h1 class="hidden">Jasmine</h1>
+            <object data="images/jasmine_banner.svg" type="image/svg+xml" class="see-more" id="jasmine_banner" data-target="6"></object>
+            <object data="images/jasmine.svg" type="image/svg+xml" class="svg-graphic" id="jasmine"></object>
+          </div>
+        </section>
+
+         <section id="Princess7">
+          <div class="princess_container">
+            <h1 class="hidden">Pochahontas</h1>
+            <object data="images/p_banner.svg" type="image/svg+xml" class="see-more" id="pochahontas_banner" data-target="7"></object>
+            <object data="images/pochahontas.svg" type="image/svg+xml" class="svg-graphic" id="pochahontas"></object>
+          </div>
+        </section>
+
+
+
+       {{!--  <article class="popover">
+          <h4 class="ipa-rating">IPA Rating - switch to what comes up in pop up</h4>
+          <div class="ratings">Average Rating:- switch to what comes up in pop up</div>
+          <p class="beer-description"></p>
+        </article> --}}
     {{{body}}}
-  </body>
+    </main>
+    <script src="js/main.js"></script>
+</body>
 </html>

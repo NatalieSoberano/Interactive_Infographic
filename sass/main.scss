@@ -14,5 +14,13 @@
 body {
     color: $color;
     background-color: $body-bg;
+    display: inline;
 } 
 
+.princess_container {
+    display: inline;
+}
+
+h1.hidden {
+    display: none;
+  }

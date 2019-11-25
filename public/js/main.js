@@ -3,34 +3,6 @@
     const seeMoreButton = document.querySelectorAll('.see-more'),
      popOver = document.querySelector('.popover');
 
-    // const waypoint = new Waypoint({ //just an object
-    //     // what element is this waypoint looking at? 
-    //     // the handler will fire when it scrolls into view
-    //     element: document.getElementById('section2'),
-    //     // what should we do when we hit the waypoint? that is up to you
-    //     // you can trriger animation, do an AJAX call, ect 
-
-    //     handler: function(direction) {
-    //       console.log('Scrolled to waypoint!');
-    //       this.element.innerHTML += `
-    //       <p>Added this with Waypoint! We are scrolling $(direction) </p>`
-    //     }
-    // })
-
-    // const waypoint2 = new Waypoint({ //just an object
-    //     // what element is this waypoint looking at? 
-    //     // the handler will fire when it scrolls into view
-    //     element: document.getElementById('section3'),
-    //     // what should we do when we hit the waypoint? that is up to you
-    //     // you can trriger animation, do an AJAX call, ect 
-
-    //     handler: function(direction) {
-    //       console.log('Scrolled to waypoint 3!');
-    //     }, 
-
-    //     offset: 200
-    // })
-
     function buildPopover(beerdata, el) {
         popOver.querySelector(".ipa-rating").textContent = `IPA Rating: ${beerdata.IpaRating}`;
         popOver.querySelector(".ratings").textContent = `Average Rating: ${beerdata.ratings}`;
