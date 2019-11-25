@@ -6,7 +6,7 @@ const sql = require('../utils/sql');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  // res.render('index', { title: 'Princess' }); - rendering dynamic content to index.hbs
+  res.render('layout', { title: 'Princess' }); // - rendering dynamic content to index.hbs
   console.log('sent back a static file');
   //res.sendFile((path.join(__dirname, "../views/index.html")))
 });
