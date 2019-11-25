@@ -1,0 +1,29 @@
+body {
+    background-color: #F2BAC9;
+    color: #000226;
+}
+
+h3 {
+    display: none;
+}
+
+.errorimg {
+    position: absolute;
+    margin-left: 365px;
+    text-align: center;
+    margin-top: 15px;;
+}
+
+.error-home {
+    margin-top: 350px;
+    font-size: 25px; 
+}
+
+.error-section a, .error-home {
+    color: white;
+    text-decoration:none;
+    display: block;
+    text-align: center;
+    font-family: $body-font;
+    text-transform: uppercase;
+}
