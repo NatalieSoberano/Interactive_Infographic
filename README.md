@@ -5,5 +5,5 @@ This site was created using Node, Express, hbs and mysql.
 
 Clone Github repo: https://github.com/NatalieSoberano/Interactive_Infographic.git
 
-Run "npm start" in terminal to get the site running on local host
+Run "npm start" in terminal to get the site running on local host 
 
