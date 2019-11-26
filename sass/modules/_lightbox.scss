@@ -1,3 +1,5 @@
+.show-lightbox { display: flex !important; }
+
 .lightbox { 
     display: none;
     //display: flex;
@@ -6,24 +8,15 @@
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 5000;
+    z-index: 50000;
     padding: 20px;
-
-    background-color: rgba(0, 0,0, 0.85);
+    background-color:#8e6dcc;
+    text-align: center;
+    margin: 0 auto;
 
     .sidebar {
         flex: 1;
     }
-    
-    .lb-content {
-        flex: 3;
-    }
-
-    img { 
-        max-width: 400px;
-        margin-top: 55px;
-        padding-top: 20px;
-     }
 
     .close {    
         right: 24px;
@@ -39,28 +32,31 @@
 }
 
 p {
-    text-align: center;
     font-family: $body-font;
     color:white;
-    padding-top: 5px;
-    width: 750px;
-    padding-left: 20px;
-    line-height: 35px;
   }
 
-  .lightbox p:first-of-type {
-    font-family: $heading-font;
-    text-transform: uppercase;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
-    font-size: 40px;
-  }
+//   .lightbox p:first-of-type {
+//     font-family: $heading-font;
+//     text-transform: uppercase;
+//     margin-bottom: 0%;
+//     padding-bottom: 0%;
+//     font-size: 40px;
+//   }
 
-.show-lb { display: flex !important; }
-
-.u-social {
-    li { 
-        display: inline-block;
-        padding: 10px;
-    }
+.circle {
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    margin: 0 auto;
 }
+
+// .image {
+//     width: 50px;
+//     height: 50px;
+// }
+
+// .Pname {
+//     width: 50px;
+//     height: 50px;
+// }
