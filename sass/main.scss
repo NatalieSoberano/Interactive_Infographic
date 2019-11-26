@@ -3,7 +3,7 @@
 @import 'modules/_lightbox';
 @font-face {
     font-family: $heading-font;
-    src: url('../css/SnellRoundhand.ttc') format('truetype');
+    src: url('SnellRoundhand.ttc') format('truetype');
   }
 
 @font-face {
@@ -52,3 +52,12 @@ h1.hidden {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
+.header {
+    text-align: center;
+}
+
+p {
+    font-family: $body-font;
+}
+

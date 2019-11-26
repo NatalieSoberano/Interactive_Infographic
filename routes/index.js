@@ -13,12 +13,12 @@ router.get('/', function(req, res, next) {
 
 router.get('/svgdata/:target', (req, res) => {
   //here is where we set up the query
-  let query = `SELECT * FROM stats WHERE id="${req.params.target}"`;
+  let query = `SELECT * FROM stats WHERE name="${req.params.target}"`;
 
   sql.query(query, (err, result) => {
     if (err) console.log(err); // something broke
 
-    console.log(result); // this should be the database row
+    console.log('result: ', result); // this should be the database row
 
     res.json(result[0]); // send that row back to the calling function
   })

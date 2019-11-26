@@ -1,22 +1,29 @@
 (() => {
     //try to get the object and do stuff with it 
-    const seeMoreButton = document.querySelectorAll('.see-more'),
-     popOver = document.querySelector('.popover');
+    const 
+     seeMoreButton = document.querySelectorAll('.see-more'),
+     lightBox = document.querySelector('.lightbox');
 
-    function buildPopover(beerdata, el) {
-        popOver.querySelector(".ipa-rating").textContent = `IPA Rating: ${beerdata.IpaRating}`;
-        popOver.querySelector(".ratings").textContent = `Average Rating: ${beerdata.ratings}`;
-        popOver.querySelector(".beer-description").textContent = beerdata.description;
+
+    function buildLightBox(princessdata, el) {
+        //lightBox.querySelector(".image").data = `images/${princessdata.image}`;
+        //lightBox.querySelector(".Pname").data = `images/${princessdata.banner}`;
+        lightBox.querySelector(".moviename").textContent = `Movie: ${princessdata.movietitle}`;
+        lightBox.querySelector(".voice").textContent = `Voice: ${princessdata.voice}`;
+        lightBox.querySelector(".age").textContent = `Age: ${princessdata.age}`;
+        lightBox.querySelector(".animal").textContent = `Animal: ${princessdata.animal}`;
+        lightBox.querySelector(".revenue").textContent = `Revenue: ${princessdata.revenue}`;
 
         // show the popover
-        popOver.classList.add('show-popover');
-        el.appendChild(popOver);
+        lightBox.classList.add('show-lightbox');
+        //el.appendChild(lightBox);
     }
 
     //run the fetch API and get the DB data
     function fetchData() {
+
         let targetEl= this, 
-            url =`/svgdata/${this.dataset.target}`;
+            url =`/svgdata/${this.id}`;
 
         fetch(url)
         .then(res => res.json())
@@ -24,7 +31,7 @@
             console.log(data);
 
             //populate the popover 
-            buildPopover(data, targetEl);
+            buildLightBox(data, targetEl);
         })
         .catch((err) => console.log(err));
     }
@@ -37,5 +44,9 @@
     // })
 
     seeMoreButton.forEach(button => button.addEventListener("click", fetchData));
+
+    lightBox.querySelector('.close').addEventListener('click', function(){
+        lightBox.classList.remove('show-lightbox');
+    })
 
 })();
