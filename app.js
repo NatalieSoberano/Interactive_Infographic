@@ -38,4 +38,17 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+// app.use((req, res, next) => {
+//   var err = new Error('Not Found');
+//   err.status = 404; 
+//   err.customMessage = "Oh No, Something Broke"
+
+//   next(err);
+// })
+
+// app.use((err, req, res, next) => {
+//   res.render('error', { data: err, layout: 'errorPage'});
+// })
+
 module.exports = app;

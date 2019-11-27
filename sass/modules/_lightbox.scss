@@ -3,7 +3,6 @@
 .lightbox { 
     display: none;
     //display: flex;
-    flex-direction: row;
     min-height: 100vh;
     width: 100%;
     position: fixed;
@@ -14,9 +13,9 @@
     text-align: center;
     margin: 0 auto;
 
-    .sidebar {
-        flex: 1;
-    }
+    // //.sidebar {
+    //     flex: 1;
+    // }
 
     .close {    
         right: 24px;
