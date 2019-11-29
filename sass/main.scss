@@ -17,6 +17,20 @@ body {
     display: inline;
 } 
 
+h1, h2 {
+    font-family: $body-font;
+    font-weight: inherit;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
 .princess_container {
     display: inline;
 }
@@ -26,19 +40,16 @@ h1.hidden {
   }
 
 .see-more {
-    height: 150px;
-    width: 150px;
-    float: left;
+    padding-top: 0;
+    margin-top: 0;
+    height: 250px;
+    width: 250px;
 }
 
 .svg-graphic {
-    height: 250px;
-    width: 150px;
-    padding: 0px;
-    float: left;
-    // text-align: center;
-    // display: inline;
-    // margin: 0 auto;
+    height: 350px;
+    width: 250px;
+    padding-left: 10px;
 }
 
 .main-header {
@@ -66,5 +77,8 @@ h1.hidden {
 p {
     font-family: $body-font;
     float: left;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 12px;
 }
 
