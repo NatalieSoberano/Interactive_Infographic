@@ -3,20 +3,15 @@
 .lightbox { 
     display: none;
     //display: flex;
-    flex-direction: row;
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
-    z-index: 50000;
+    // z-index: 90000px;
     padding: 20px;
     background-color:#8e6dcc;
     text-align: center;
     margin: 0 auto;
-
-    .sidebar {
-        flex: 1;
-    }
 
     .close {    
         right: 24px;
@@ -27,7 +22,7 @@
         border: thin solid white;
         padding: 2px 14px 5px;
         border-radius: 50%;
-        background-color:grey;
+        background-color: #e94695;
     }
 }
 
@@ -36,27 +31,27 @@ p {
     color:white;
   }
 
-//   .lightbox p:first-of-type {
-//     font-family: $heading-font;
-//     text-transform: uppercase;
-//     margin-bottom: 0%;
-//     padding-bottom: 0%;
-//     font-size: 40px;
-//   }
-
 .circle {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     padding: 0px;
-    margin: 0 auto;
+    float: left;
 }
 
-// .image {
-//     width: 50px;
-//     height: 50px;
-// }
+ul {
+    list-style-type: none;
+}
 
-// .Pname {
-//     width: 50px;
-//     height: 50px;
-// }
+.princess {
+    margin-top: 150px;
+    float: left;
+}
+
+.image {
+    width: 100%
+}
+
+.Pname {
+    width: 100%;
+    padding-left: 60px;
+}

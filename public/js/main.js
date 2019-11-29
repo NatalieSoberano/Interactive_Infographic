@@ -6,8 +6,8 @@
 
 
     function buildLightBox(princessdata, el) {
-        //lightBox.querySelector(".image").data = `images/${princessdata.image}`;
-        //lightBox.querySelector(".Pname").data = `images/${princessdata.banner}`;
+        lightBox.querySelector(".image").data = `images/${princessdata.image}`;
+        lightBox.querySelector(".Pname").data = `images/${princessdata.banner}`;
         lightBox.querySelector(".moviename").textContent = `Movie: ${princessdata.movietitle}`;
         lightBox.querySelector(".voice").textContent = `Voice: ${princessdata.voice}`;
         lightBox.querySelector(".age").textContent = `Age: ${princessdata.age}`;

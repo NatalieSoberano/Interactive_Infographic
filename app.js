@@ -34,8 +34,21 @@ app.use(function(err, req, res, next) {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+  res.status(err.status || 404);
+  res.render('error', { layout: 'errorPage' });
 });
+
+
+// app.use((req, res, next) => {
+//   var err = new Error('Not Found');
+//   err.status = 404; 
+//   err.customMessage = "Oh No, Something Broke"
+
+//   next(err);
+// })
+
+// app.use((err, req, res, next) => {
+//   res.render('error', { data: err, layout: 'errorPage'});
+// })
 
 module.exports = app;
