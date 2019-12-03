@@ -1,0 +1,140 @@
+.errorimg {
+  margin-top: 100px;
+  text-align: center;
+  margin: auto;
+  display: block;
+  width: 100%; }
+
+.error-home {
+  font-size: 25px;
+  font-family: "Avenir", "sans-serif";
+  text-align: center; }
+
+h5 {
+  font-size: 25px;
+  font-family: "Avenir", "sans-serif";
+  font-weight: inherit;
+  text-align: center;
+  text-transform: uppercase; }
+
+.error-section a, .error-home {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-family: "Avenir", "sans-serif";
+  text-transform: uppercase;
+  margin-top: 30px; }
+
+.show-lightbox {
+  display: flex !important; }
+
+.lightbox {
+  display: none;
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  background-color: #8e6dcc;
+  text-align: center;
+  margin: 0 auto; }
+  .lightbox .close {
+    right: 24px;
+    top: 20px;
+    cursor: pointer;
+    font-size: 2em;
+    position: fixed;
+    border: thin solid white;
+    padding: 2px 14px 5px;
+    border-radius: 50%;
+    background-color: #e94695; }
+
+p {
+  font-family: "Avenir", "sans-serif";
+  color: white; }
+
+.circle {
+  height: 30px;
+  width: 30px;
+  padding: 0px;
+  float: left; }
+
+ul {
+  list-style-type: none; }
+
+.princess {
+  margin-top: 150px;
+  float: left; }
+
+.image {
+  width: 100%; }
+
+.Pname {
+  width: 100%;
+  padding-left: 60px; }
+
+@font-face {
+  font-family: "Snell Roundhand", "serif";
+  src: url("SnellRoundhand.ttc") format("truetype"); }
+@font-face {
+  font-family: "Avenir", "sans-serif";
+  src: url("../css/Avenir.ttc") format("truetype"); }
+body {
+  color: white;
+  background-color: #51308f;
+  display: inline; }
+
+h1, h2 {
+  font-family: "Avenir", "sans-serif";
+  font-weight: inherit; }
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 15px; }
+
+h2 {
+  font-size: 18px; }
+
+.princess_container {
+  display: inline; }
+
+h1.hidden {
+  display: none; }
+
+.see-more {
+  padding-top: 0;
+  margin-top: 0;
+  height: 250px;
+  width: 250px; }
+
+.svg-graphic {
+  height: 350px;
+  width: 250px;
+  padding-left: 10px; }
+
+.main-header {
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 0px; }
+
+#logo {
+  height: 200px;
+  width: 500px; }
+
+.logo-header {
+  text-align: center;
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.header {
+  text-align: center; }
+
+p {
+  font-family: "Avenir", "sans-serif";
+  float: left;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 12px; }
+
+/*# sourceMappingURL=main.css.map */
